@@ -8,13 +8,15 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { ListComponent } from './list/list.component';
 import { ItemComponent } from './item/item.component';
 import {AppRoutingModule} from './app-routing.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     WelcomePageComponent,
     ListComponent,
-    ItemComponent
+    ItemComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
