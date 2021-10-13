@@ -7,7 +7,9 @@ import { ListComponent } from './list.component';
   declarations: [ListComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild([{ path: '', component: ListComponent }]),
+    RouterModule.forChild([
+      { path: '', component: ListComponent },
+    ]),
   ],
 })
 export class ListModule {}

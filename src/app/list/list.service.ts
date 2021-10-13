@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { List } from '../interface/list';
@@ -16,8 +16,21 @@ export class ListService {
     this.http = http;
    }
 
+  handleError(error: HttpErrorResponse) {
+    if (error.status === 0) {
+      console.error('An error occurred:', error.error);
+    } else {
+      console.error(
+        `Backend returned code ${error.status}, body was: `, error.error);
+    }
+    return throwError(
+      'Something bad happened; please try again later.');
+  }
 
-   getList():Observable<List[]> {
-    return this.http.get<List[]>(this.listUrl)
+   getList():Observable<List> {
+    return this.http.get<List>(this.listUrl)
+    .pipe(
+      catchError(this.handleError)
+    );
    }
 }

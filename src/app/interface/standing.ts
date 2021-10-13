@@ -4,6 +4,6 @@ import { Team } from "./team";
 
 export interface Standing {
   team: Team
-  note: Note
+  note?: Note
   stats: Stat[]
 }

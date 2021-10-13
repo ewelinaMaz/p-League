@@ -1,5 +1,6 @@
-import { Root2 } from "./root2";
+import { Data } from "./data";
 
 export interface List {
-  list: Root2[];
+  status: boolean;
+  data: Data;
 }
