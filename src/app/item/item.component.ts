@@ -1,4 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, PipeTransform } from '@angular/core';
+import { DecimalPipe } from '@angular/common';
+import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
+
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -7,6 +12,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ItemComponent implements OnInit {
   @Input()
   teams: any;
+  filter = new FormControl('');
 
   constructor() {}
 

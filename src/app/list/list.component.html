@@ -2,25 +2,6 @@
   <div class="row">
     <h4 class="text-center col-5 py-4">{{ table.name }}</h4>
     <h4 class="text-center col-5 py-4">Season: {{ table.season }}</h4>
-    <div class="col-10 col-md-12">
-      <app-item [teams]="table.standings"></app-item>
-      <!-- <tbody class="text-center">
-          <tr *ngFor="let teamsList of table.standings">
-            <th scope="row">{{teamsList.stats[8].value}}</th>
-            <td >{{teamsList.team.name}}</td>
-            <td>
-              <img class="logo" src={{teamsList.team.logos[0].href}} alt={{teamsList.team.name}}/>
-            </td>
-            <td >{{teamsList.team.abbreviation}}</td>
-            <td >{{teamsList.stats[6].value}}</td>
-            <td >{{teamsList.stats[0].value}}</td>
-            <td >{{teamsList.stats[1].value}}</td>
-            <td >{{teamsList.stats[2].value}}</td>
-            <td >{{teamsList.stats[4].value}}</td>
-            <td >{{teamsList.stats[5].value}}</td>
-            <td >{{teamsList.stats[9].value}}</td>
-          </tr>
-        </tbody> -->
-    </div>
   </div>
 </div>
+<app-item [teams]="table.standings"></app-item>

@@ -1,2 +1,24 @@
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif; */
+.component {
+  display: flex;
+  background-color:lightgrey;
+  height: 350px;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.main-picture {
+  height: 350px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.news {
+  text-align: center;
+  margin-top: 4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+

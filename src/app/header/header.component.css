@@ -1,9 +1,9 @@
 .nav-tabs {
-  background-color: green;
+  background-color: black;
 }
 .nav-tabs a {
   color:beige;
 }
 .nav-tabs .active {
-  color: green;
+  color: black;
 }
