@@ -2,7 +2,8 @@
   background-color: black;
 }
 .nav-tabs a {
-  color:beige;
+  color: beige;
+  font-family: 'Montserrat', sans-serif;
 }
 .nav-tabs .active {
   color: black;

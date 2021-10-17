@@ -9,27 +9,27 @@ interface news {
 const NEWS: news[] = [
   {
     title: 'Next clashes',
-    image: 'assets/images/fans.jpeg',
+    image: 'assets/images/clashes.jpg',
+    description:
+      'Check where and when your favorite team will play the next match',
+  },
+  {
+    title: 'Transfers',
+    image: 'assets/images/transfers.jpg',
     description:
       'check where and when your favorite team will play the next match',
   },
   {
-    title: 'Next clashes',
+    title: 'For fans',
     image: 'assets/images/fans.jpeg',
     description:
-      'check where and when your favorite team will play the next match',
+      'You can buy ticket on our page!',
   },
   {
-    title: 'Next clashes',
-    image: 'assets/images/fans.jpeg',
+    title: 'Interviews',
+    image: 'assets/images/interview.jpg',
     description:
-      'check where and when your favorite team will play the next match',
-  },
-  {
-    title: 'Next clashes',
-    image: 'assets/images/fans.jpeg',
-    description:
-      'check where and when your favorite team will play the next match',
+      'The latest interviews with players and coaches from Premier League',
   },
 ];
 @Component({

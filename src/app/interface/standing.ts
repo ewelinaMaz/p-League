@@ -6,4 +6,5 @@ export interface Standing {
   team: Team
   note?: Note
   stats: Stat[]
+  name: any
 }

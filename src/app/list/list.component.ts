@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Data } from '../interface/data';
 import { ListService } from './list.service';
 
 @Component({
@@ -9,18 +10,19 @@ import { ListService } from './list.service';
 })
 export class ListComponent implements OnInit {
   listService: ListService;
-  table: any;
+  table: Data | any;
+  teamsName: any;
   private activatedRoute: ActivatedRoute;
 
   constructor(listService: ListService, activatedRoute: ActivatedRoute) {
     this.listService = listService;
     this.activatedRoute = activatedRoute;
+    this.table = this.table;
   }
 
   showList() {
     this.activatedRoute.data.subscribe((data) => {
       this.table = data.res.data;
-      console.log(this.table);
       return this.table;
     });
   }
@@ -29,3 +31,5 @@ export class ListComponent implements OnInit {
     this.showList();
   }
 }
+
+
